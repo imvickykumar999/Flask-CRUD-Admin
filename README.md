@@ -1,5 +1,20 @@
 # `Flask CRUD Admin`
 
+## To run locally using Docker:
+
+```bash
+docker-compose up --build
+```
+
+- This will build the image (if needed) and start the Flask app at [http://localhost:5000](http://localhost:5000).
+
+- To stop the app, press `Ctrl+C` or run:
+  ```bash
+  docker-compose down
+  ```
+
+## Pull Docker Image: (to run without building)
+
     docker pull ghcr.io/imvickykumar999/flask-cms-gunicorn:latest
     docker run -p 5000:5000 ghcr.io/imvickykumar999/flask-cms-gunicorn:latest
 
