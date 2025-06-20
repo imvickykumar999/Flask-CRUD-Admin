@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ post.title }}</h1>
+        <h4 class="text-muted">{{ post.subtitle }}</h4>
+        <p class="text-muted">Posted on {{ post.date_created.strftime('%b %d, %Y') }}</p>
+        <hr>
+        <div>
+            {{ post.content | safe }}
+        </div>
+        <hr>
+        <a href="{{ url_for('home') }}" class="btn btn-default">← Back to Blog</a>
+    </div>
+</body>
+</html>

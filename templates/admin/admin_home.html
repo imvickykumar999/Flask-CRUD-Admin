@@ -1,0 +1,14 @@
+{% extends 'admin/base.html' %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center">📊 Admin Dashboard</h1>
+        <hr>
+        <p>Welcome to the MyCMS admin panel.</p>
+        <ul>
+            <li><strong>Blog Posts:</strong> Add or manage blog content</li>
+            <li><strong>Go to Public Site:</strong> <a href="{{ url_for('home') }}">View Site</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
