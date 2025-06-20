@@ -1,7 +1,7 @@
 # `Flask CRUD Admin`
 
-    gunicorn -w 4 -b 0.0.0.0:5000 app:app
-    https://blogcms.pythonanywhere.com/
+    docker pull ghcr.io/imvickykumar999/flask-cms-gunicorn:latest
+    docker run -p 5000:5000 ghcr.io/imvickykumar999/flask-cms-gunicorn:latest
 
 ![image](https://github.com/user-attachments/assets/62c24b0f-4f7b-4715-a9bd-90fc2ba985cb)
 ![image](https://github.com/user-attachments/assets/7eef460a-e396-4d7b-8fb3-545f11173111)
