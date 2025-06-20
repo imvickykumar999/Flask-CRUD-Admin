@@ -41,10 +41,11 @@ class SecureModelView(ModelView):
 admin = Admin(app, name='MyCMS', index_view=MyAdminIndexView(), template_mode='bootstrap3')
 admin.add_view(SecureModelView(BlogPost, db.session))
 
-# Load user
+# Load user for Flask-Login
 @login_manager.user_loader
 def load_user(user_id):
-    return User.query.get(int(user_id))
+    with db.session() as session:
+        return session.get(User, int(user_id))
 
 # Public Blog Home
 @app.route('/')

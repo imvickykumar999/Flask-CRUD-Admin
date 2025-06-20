@@ -1,5 +1,6 @@
 # `Flask CRUD Admin`
 
+    gunicorn -w 4 -b 0.0.0.0:5000 app:app
     https://blogcms.pythonanywhere.com/
 
 ![image](https://github.com/user-attachments/assets/62c24b0f-4f7b-4715-a9bd-90fc2ba985cb)
