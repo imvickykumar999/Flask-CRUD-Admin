@@ -1,2 +1,4 @@
 flask-cms.tar
 .venv
+__pycache__
+.pyc
