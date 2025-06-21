@@ -1,5 +1,10 @@
 # `Flask CRUD Admin`
 
+    docker pull imvickykumar999/flask-admin:latest
+    docker run -p 5000:5000 imvickykumar999/flask-admin:latest
+
+[![image](https://github.com/user-attachments/assets/67a58058-6b4c-464e-bcd3-bf343ca10bf1)](https://hub.docker.com/r/imvickykumar999/flask-admin)
+
 ## Pull Docker Image: (to run without building)
 
     docker pull ghcr.io/imvickykumar999/flask-cms-gunicorn:latest
