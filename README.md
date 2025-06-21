@@ -1,5 +1,10 @@
 # `Flask CRUD Admin`
 
+## Pull Docker Image: (to run without building)
+
+    docker pull ghcr.io/imvickykumar999/flask-cms-gunicorn:latest
+    docker run -p 5000:5000 ghcr.io/imvickykumar999/flask-cms-gunicorn:latest
+
 ## To run locally using Docker:
 
 ```bash
@@ -12,11 +17,6 @@ docker-compose up --build
   ```bash
   docker-compose down
   ```
-
-## Pull Docker Image: (to run without building)
-
-    docker pull ghcr.io/imvickykumar999/flask-cms-gunicorn:latest
-    docker run -p 5000:5000 ghcr.io/imvickykumar999/flask-cms-gunicorn:latest
 
 ![image](https://github.com/user-attachments/assets/62c24b0f-4f7b-4715-a9bd-90fc2ba985cb)
 ![image](https://github.com/user-attachments/assets/7eef460a-e396-4d7b-8fb3-545f11173111)
